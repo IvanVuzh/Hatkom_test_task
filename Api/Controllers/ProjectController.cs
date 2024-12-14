@@ -125,7 +125,7 @@ namespace Api.Controllers
             return Ok(mergedTimeLogs);
         }
 
-        private List<TimeLog> MergeTimeLogs(List<TimeLog> timeLogs)
+        private List<TimeLog>? MergeTimeLogs(List<TimeLog> timeLogs)
         {
             if (timeLogs == null || timeLogs.Count < 2) return timeLogs;
 
